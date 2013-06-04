@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: hn_rails2_dev
+  username:
+  password:
+
+test:
+  adapter: postgresql
+  database: hn_rails2_test
+  username:
+  password:
