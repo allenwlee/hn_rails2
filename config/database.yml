@@ -3,6 +3,7 @@ development:
   database: hn_rails2_dev
   username:
   password:
+  host: localhost
 
 test:
   adapter: postgresql
