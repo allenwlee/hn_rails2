@@ -10,10 +10,13 @@ class PostsController < ActionController::Base
   def create
     p "PARAMS*********"
     p params
-    @post = Post.new(params[:post].permit(:title, :body))
+    @post = Post.new(params[:post])
     @post.save
     p "POST*********"
     p @post
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
 end

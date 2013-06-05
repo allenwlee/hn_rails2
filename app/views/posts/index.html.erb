@@ -3,5 +3,8 @@
 <p>
 <li>title: <%= p.title %></li>
 <li>body: <%= p.body %></li>
+<li><%= link_to 'Show', p %></li>
+<li><%= link_to 'Edit', edit_post_path(p) %></li>
+<li><%= link_to 'Delete', p, :confirm => 'Are you sure?', :method => :delete %></li>
 </p>
 <% end %>
